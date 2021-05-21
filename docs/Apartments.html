@@ -250,16 +250,41 @@ summary {
 <p class="caption">Caption</p>
 </div>
 <p>First, I will omit the blank entries under <code>PETS_ALLOWED</code> in the fitting of the Binomial GLM. I will then determine a suitable solutions to these entries.</p>
-<p>Call: glm(formula = factor(PETS_ALLOWED) ~ 0 + BALCONIES, family = binomial(), data = PETS_YES_NO)</p>
-<p>Deviance Residuals: Min 1Q Median 3Q Max<br />
--1.9334 0.5789 0.5789 0.5789 1.1774</p>
-<p>Coefficients: Estimate Std. Error z value Pr(&gt;|z|)<br />
-BALCONIESBLANK 0.00000 0.70711 0.00 1<br />
-BALCONIESNO 1.20053 0.07473 16.07 &lt;2e-16 <strong><em> BALCONIESYES 1.70150 0.05692 29.89 &lt;2e-16 </em></strong> — Signif. codes: 0 ‘<em><strong>’ 0.001 ’</strong>’ 0.01 ’</em>’ 0.05 ‘.’ 0.1 ’ ’ 1</p>
-<p>(Dispersion parameter for binomial family taken to be 1)</p>
-<pre><code>Null deviance: 4687.1  on 3381  degrees of freedom</code></pre>
-<p>Residual deviance: 3135.5 on 3378 degrees of freedom AIC: 3141.5</p>
-<p>Number of Fisher Scoring iterations: 4</p>
+<p>Coefficient outputs</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Estimate</th>
+<th align="right">Std. Error</th>
+<th align="right">z value</th>
+<th align="right">Pr(&gt;|z|)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">BALCONIESBLANK</td>
+<td align="right">0.0000</td>
+<td align="right">0.7071</td>
+<td align="right">0.0000</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">BALCONIESNO</td>
+<td align="right">1.2005</td>
+<td align="right">0.0747</td>
+<td align="right">16.0660</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">BALCONIESYES</td>
+<td align="right">1.7015</td>
+<td align="right">0.0569</td>
+<td align="right">29.8948</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="confirmed-storeys" class="section level3" number="2.1.2">
 <h3 number="2.1.2"><span class="header-section-number">2.1.2</span> Confirmed Storeys</h3>
